@@ -2,4 +2,14 @@
 	<string name="app_name">ShoeStore</string>
 	<!-- TODO: Remove or change this placeholder text -->
 	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="passwordLabel">Password</string>
+	<string name="emailLabel">Email</string>
+	<string name="loginButtonText">Login</string>
+	<string name="registerButtonText">Register</string>
+	<string name="got_it">Got it</string>
+	<string name="welcome_message">Welcome to our shop! Our mission is to earn money, more money... gold!</string>
+	<string name="welcome_title">Welcome</string>
+	<string name="instructionsTitle">Instructions</string>
+	<string name="instructionsMessage">Just spend your money on everything you see. Don\'t think wheather you need it or not, just buy. We will cover you with instant credit at 15% a day, don\'t worry.</string>
+	<string name="instructionsButton">Got it</string>
 </resources>

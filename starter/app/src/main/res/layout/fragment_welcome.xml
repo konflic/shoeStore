@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/frameLayout2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".WelcomeFragment"
+		>
+
+		<Button
+			android:id="@+id/welcome_go_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/got_it"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textView2"
+			app:layout_constraintVertical_bias="0.25"
+			/>
+
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="40sp"
+			android:layout_marginRight="40sp"
+			android:paddingLeft="50sp"
+			android:paddingRight="50sp"
+			android:text="@string/welcome_message"
+			android:textAlignment="center"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/welcome_title"
+			app:layout_constraintVertical_bias="0.100000024"
+			/>
+
+		<TextView
+			android:id="@+id/welcome_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/welcome_title"
+			android:textAllCaps="true"
+			android:textSize="36sp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.25"
+			/>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
