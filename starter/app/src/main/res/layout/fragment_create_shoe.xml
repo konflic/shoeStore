@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
 
     <!--ConstraintLayout here for better positioning elements in responsive manner-->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,7 +36,8 @@
             android:layout_marginTop="25dp"
             android:ems="10"
             android:importantForAutofill="no"
-            android:inputType="textPersonName"
+            android:inputType="text"
+            android:text="@={shoe.name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/create_shoe_fragmnet_title" />
@@ -52,7 +59,8 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:importantForAutofill="no"
-            android:inputType="textPersonName"
+            android:inputType="text"
+            android:text="@={shoe.company}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView5" />
@@ -84,7 +92,8 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:importantForAutofill="no"
-            android:inputType="textPersonName"
+            android:inputType="text"
+            android:text="@={shoe.description}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView8" />
