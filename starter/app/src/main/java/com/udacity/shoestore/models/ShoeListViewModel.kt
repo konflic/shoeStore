@@ -1,5 +1,6 @@
 package com.udacity.shoestore.models
 
+import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.R
@@ -13,18 +14,23 @@ class ShoeListViewModel : ViewModel() {
         initFakeData()
     }
 
-    fun addShoe(name: String, size: Double, company: String, description: String) {
+    fun addShoe(name: String, size: Double, company: String, description: String): Boolean {
 
-        shoeList.value?.add(
-            Shoe(
-                name,
-                size,
-                company,
-                description,
-                R.drawable.shoe_placeholder
+        return if (name != "" && company != "" && description != "" && size != 0.0) {
+            shoeList.value?.add(
+                Shoe(
+                    name,
+                    size,
+                    company,
+                    description,
+                    image = R.drawable.shoe_placeholder
+                )
             )
-        )
-        shoeList.value = shoeList.value
+            shoeList.value = shoeList.value
+            true
+        } else {
+            false
+        }
     }
 
     private fun initFakeData() {

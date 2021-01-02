@@ -1,4 +1,4 @@
-package com.udacity.shoestore
+package com.udacity.shoestore.fragments
 
 import android.graphics.Color
 import android.os.Bundle
@@ -11,9 +11,9 @@ import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.observe
 import androidx.navigation.Navigation
+import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 import com.udacity.shoestore.models.ShoeListViewModel
 
